@@ -29,48 +29,31 @@ class Screen1 extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
-            Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.cyan,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      '+91 123 456 789',
-                    )
-                  ],
-                ),
+            SizedBox(
+              height: 20,
+              width: 100,
+              child: Divider(
+                color: Colors.white,
+                thickness: 1,
               ),
             ),
             Card(
-              color: Colors.white,
               margin: EdgeInsets.symmetric(horizontal: 25),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.cyan,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      'jithuraj@email.com',
-                    )
-                  ],
+              child: ListTile(
+                leading: Icon(Icons.phone),
+                title: Text('+91 123 456 789'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+              child: ListTile(
+                dense: true,
+                leading: Icon(Icons.mail),
+                title: Text(
+                  'jithuraj@email.com',
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
